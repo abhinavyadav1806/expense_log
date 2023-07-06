@@ -1,9 +1,8 @@
 import "./ExpenseItem.css";
+import Card from "./Card";
 import ExpenseDate from "./ExpenseDate";
 
-{
-  /* -- This is called object destructuring. -- */
-}
+/* -- This is called object destructuring. -- */
 // export default function ExpenseItem({date, title, amount})
 export default function ExpenseItem(props) {
   //const expenseDate   = new Date(2023, 6, 2);
@@ -15,7 +14,7 @@ export default function ExpenseItem(props) {
   // const year  = props.date.getFullYear();
 
   return (
-    <div className="expense-item">
+    <Card className="expense-item">
       <ExpenseDate date={props.date} />
       {/* <div>
         <div>{month}</div>
@@ -40,7 +39,7 @@ export default function ExpenseItem(props) {
             <h2>{title}</h2>
             <div className="expense-item__price">${amount}</div>
         </div> */}
-    </div>
+    </Card>
   );
 }
 
